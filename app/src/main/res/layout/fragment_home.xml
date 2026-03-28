@@ -34,8 +34,82 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="4"
+            android:useDefaultMargins="true"
             android:padding="15dp">
-            <!-- Icons for Airtime, Data, etc. -->
+
+            <!-- Existing Icons Placeholder -->
+            <include layout="@layout/item_service_data" />
+            <include layout="@layout/item_service_airtime" />
+            <include layout="@layout/item_service_cable" />
+            <include layout="@layout/item_service_electric" />
+
+            <!-- New Fintech Icons -->
+            <LinearLayout
+                android:id="@+id/btn_crypto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_crypto"
+                    android:background="@drawable/bg_icon_crypto"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crypto"
+                    android:textSize="10sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_vcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_vcard"
+                    android:background="@drawable/bg_icon_vcard"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V-Card"
+                    android:textSize="10sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_giftcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_giftcard"
+                    android:background="@drawable/bg_icon_giftcard"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gift Card"
+                    android:textSize="10sp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
         </GridLayout>
     </androidx.cardview.widget.CardView>
 

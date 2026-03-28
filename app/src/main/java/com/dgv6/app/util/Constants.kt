@@ -1,7 +1,10 @@
 package com.dgv6.app.util
 
 object Constants {
-    // Replace with your actual vendor domain
+    /**
+     * Set your vendor domain here for branded builds.
+     * Ensure it ends with a forward slash.
+     */
     const val BASE_URL = "https://yourdomain.com/"
 
     // API Endpoints
